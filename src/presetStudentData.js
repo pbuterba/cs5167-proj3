@@ -1,5 +1,4 @@
-export const presetStudentData = [
-    {
+export const presetStudentData = {
         name: "John Smith",
         college: "CEAS",
         major: "Computer Science",
@@ -12,5 +11,4 @@ export const presetStudentData = [
         academicAdvisorEmail: "alice.turner@mail.uc.edu",
         coopAdvisorName: "Sam Maxwell",
         coopAdvisorEmail: "sam.maxwell@mail.uc.edu"
-    }
-]
+}
