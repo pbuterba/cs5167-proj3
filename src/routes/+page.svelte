@@ -1,8 +1,13 @@
 <script>
-    import { Header, Flyout, Button, HeaderTypeEnum, Text, Popover, PopoverChipTrigger, PopoverMultiSelectContent } from "kiwi-nl";
+    import { Header, Flyout, Button, HeaderTypeEnum, Text, Popover, PopoverChipTrigger, PopoverSingleSelectContent } from "kiwi-nl";
     import {presetStudentData} from "../presetStudentData"
     import humanIcon from "$lib/img/human-icon.png"
     let flyoutElement;
+
+    let popoverItems = [];
+    function handlePopoverItemsChanged(event) {
+        popoverItems = event.detail.selectedItems;
+    }
 
 </script>
 
@@ -83,35 +88,32 @@
 					</svg>
     </Button>
 
-    <Popover>
-      <PopoverChipTrigger slot="trigger" label="My Academics" />
-      <PopoverMultiSelectContent slot="content" />
-    </Popover>
+    <Header>My Academics</Header>
     
     <Popover>
-      <PopoverChipTrigger slot="trigger" label="Classes and Schedule" />
-      <PopoverMultiSelectContent slot="content" />
+      <PopoverChipTrigger slot="trigger" label="Classes and Schedule"/>
+      <PopoverSingleSelectContent slot="content" />
     </Popover>
 
 
     <Popover>
       <PopoverChipTrigger slot="trigger" label="Calendars and Deadlines" />
-      <PopoverMultiSelectContent slot="content" />
+      <PopoverSingleSelectContent slot="content" />
     </Popover>
 
     <Popover>
-      <PopoverChipTrigger slot="trigger" label="Grades, Transcripts, and Enrollment" />
-      <PopoverMultiSelectContent slot="content" />
+      <PopoverChipTrigger slot="trigger" label="Transcripts and Enrollment" />
+      <PopoverSingleSelectContent slot="content" />
     </Popover>
 
     <Popover>
       <PopoverChipTrigger slot="trigger" label="Graduation and Commencement" />
-      <PopoverMultiSelectContent slot="content" />
+      <PopoverSingleSelectContent slot="content" />
     </Popover>
 
     <Popover>
       <PopoverChipTrigger slot="trigger" label="Academic Progress" />
-      <PopoverMultiSelectContent slot="content" />
+      <PopoverSingleSelectContent slot="content" />
     </Popover>
 
     <Button on:click={() => flyoutElement.toggle()}>
