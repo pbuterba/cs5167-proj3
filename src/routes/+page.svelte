@@ -1,5 +1,6 @@
 <script>
     import Calendar from '../lib/Calendar.svelte';
+    import ClassList from '../lib/ClassList.svelte';
     import { Popover, PopoverChipTrigger, PopoverSingleSelectContent, Header } from 'kiwi-nl';
 
     const items = [
@@ -17,7 +18,7 @@
 
     $: semester;
 </script>
-
+<div class='container'>
 <div class="calendar">
     <div class="semester-selection">
         <Header type="h2">Semester:</Header>
@@ -28,8 +29,17 @@
     </div>
     <Calendar {semester}></Calendar>
 </div>
+<div class="class-list" style="align-content:center">
+    <ClassList {semester} />
+</div>
+</div>
+
 
 <style>
+    .container {
+        display:flex;
+        flex-direction: row;
+    }
     .calendar {
         display: flex;
         flex-direction: column;
@@ -42,4 +52,10 @@
         gap: 16px;
         align-items: center;
     }
+    .class-list {
+        display:block;
+        align-self: center;
+        padding-left: 10px;
+
+}
 </style>
