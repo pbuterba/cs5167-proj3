@@ -8,6 +8,8 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@event-calendar/core": "^3.7.0",
+		"@event-calendar/time-grid": "^3.7.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
@@ -15,6 +17,6 @@
 		"vite": "^5.0.3"
 	},
 	"dependencies": {
-		"kiwi-nl": "^0.0.1"
+		"kiwi-nl": "^0.0.3"
 	}
 }

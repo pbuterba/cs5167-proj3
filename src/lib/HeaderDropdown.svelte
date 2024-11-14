@@ -1,26 +1,20 @@
 <script>
-    import {
-        Popover,
-        PopoverTrigger,
-        PopoverContent,
-    } from 'kiwi-nl';
+    import { Popover, PopoverTrigger, PopoverContent } from 'kiwi-nl';
 
-    export let label = "";
+    export let label = '';
     export let links = [];
 </script>
 
-
-
 <Popover>
-    <PopoverTrigger slot="trigger">
-      <div slot="custom-trigger" class="trigger">{label}</div>
+    <PopoverTrigger slot="trigger" fullwidth={false} fullheight={false}>
+        <div slot="custom-trigger" class="trigger">{label}</div>
     </PopoverTrigger>
     <PopoverContent slot="content">
-      <div class="header-dropdown-links" slot="custom-content">
-        {#each links as link }
-            <a href={link.href}>{link.label}</a>  
-        {/each}
-      </div>
+        <div class="header-dropdown-links" slot="custom-content">
+            {#each links as link}
+                <a href={link.href}>{link.label}</a>
+            {/each}
+        </div>
     </PopoverContent>
 </Popover>
 
@@ -28,20 +22,22 @@
     .header-dropdown-links {
         display: flex;
         flex-direction: column;
+        gap: 8px;
     }
     a {
         white-space: nowrap;
         text-decoration: none;
-        color: red;
+        color: #e00022;
         display: flex;
         padding: 4px 8px 4px 8px;
+        border-radius: 4px;
     }
     a:hover {
-        background-color: red;
+        background-color: #e00022;
         color: white;
     }
     .trigger {
-        color:white;
+        color: white;
         font-weight: 600;
         width: auto;
         height: 100%;
@@ -50,6 +46,6 @@
         transition: background-color 0.3s ease;
     }
     .trigger:hover {
-        background-color: #dc0000;
+        background-color: #be0000;
     }
 </style>
