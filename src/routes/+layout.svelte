@@ -1,4 +1,5 @@
 <script>
+    import {goto} from '$app/navigation';
     import { Header, Flyout, Button, HeaderTypeEnum, Text, ButtonTypeEnum } from 'kiwi-nl';
     import { presetStudentData } from '../presetStudentData';
     import { headersAndLinks } from '../presetTabData';
@@ -124,9 +125,9 @@
             </div>
 
             <br />
-            <Header type={HeaderTypeEnum.h3}>Progress Information:</Header>
+            <Header type={HeaderTypeEnum.h3}>Academic Progress:</Header>
                 <!-- ProgressTracker component displaying percent of classes complete -->
-                <ProgressTracker progress={getCompletedCredits(presetStudentData.curriculum)/getTotalCredits(presetStudentData.curriculum)} />
+                <ProgressTracker openProgressPage={() => {goto('/academic-progress', false)}} progress={getCompletedCredits(presetStudentData.curriculum)/getTotalCredits(presetStudentData.curriculum)} />
         </div>
     </Flyout>
 
