@@ -4,7 +4,7 @@
     import { headersAndLinks } from '../presetTabData';
     import humanIcon from '$lib/img/human-icon.png';
     import HeaderDropdown from '../lib/HeaderDropdown.svelte';
-    import ProgressTracker from "../lib/ProgressTracker.svelte";
+    import ProgressTracker from '../lib/ProgressTracker.svelte';
 
     let flyoutElement;
 </script>
@@ -68,8 +68,8 @@
 
             <br />
             <Header type={HeaderTypeEnum.h3}>Progress Information:</Header>
-                <!-- ProgressTracker component displaying percent of classes complete -->
-                <ProgressTracker progress={.85} />
+            <!-- ProgressTracker component displaying percent of classes complete -->
+            <ProgressTracker progress={0.85} />
         </div>
     </Flyout>
 
@@ -101,6 +101,7 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import '../variables.css';
     .flyout-body {
         display: flex;
         flex-direction: column;
