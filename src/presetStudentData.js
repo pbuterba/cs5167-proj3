@@ -501,51 +501,51 @@ export const presetStudentData = {
                     }
                 ]
             }
-        ]
-    },
-    placeholders: {
-        1: {
-            name: "Breadth of Knowledge Class",
-            fulfillments: [
-                {
-                    number: "ASL 1003",
-                    name: "Orientation to Deafness",
-                    credits: 3,
-                    completed: true,
-                    inProgress: true,
-                    registered: true,
-                    grade: null,
-                    counted: false
-                },
-                {
-                    number: "ENGL 2003",
-                    name: "The Magic of Harry Potter",
-                    credits: 3,
-                    completed: true,
-                    inProgress: true,
-                    registered: true,
-                    grade: null,
-                    counted: false
-                },
-                {
-                    number: "AMEC 2050C",
-                    name: "Web Design I",
-                    credits: 3,
-                    completed: false,
-                    inProgress: true,
-                    registered: true,
-                    grade: null,
-                    counted: false
-                }
-            ]
-        },
-        2: {
-            name: "Computer Science Elective",
-            fulfillments: []
-        },
-        3: {
-            name: "General Electives",
-            fulfillments: []
+        ],
+        placeholders: {
+            1: {
+                name: "Breadth of Knowledge Class",
+                fulfillments: [
+                    {
+                        number: "ASL 1003",
+                        name: "Orientation to Deafness",
+                        credits: 3,
+                        completed: true,
+                        inProgress: true,
+                        registered: true,
+                        grade: null,
+                        counted: false
+                    },
+                    {
+                        number: "ENGL 2003",
+                        name: "The Magic of Harry Potter",
+                        credits: 3,
+                        completed: true,
+                        inProgress: true,
+                        registered: true,
+                        grade: null,
+                        counted: false
+                    },
+                    {
+                        number: "AMEC 2050C",
+                        name: "Web Design I",
+                        credits: 3,
+                        completed: false,
+                        inProgress: true,
+                        registered: true,
+                        grade: null,
+                        counted: false
+                    }
+                ]
+            },
+            2: {
+                name: "Computer Science Elective",
+                fulfillments: []
+            },
+            3: {
+                name: "General Electives",
+                fulfillments: []
+            }
         }
-    }
+    },
 }
