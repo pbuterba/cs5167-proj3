@@ -39,7 +39,6 @@
 
 <style>
     .class-list {
-        text-align: center;
         padding: 1rem;
     }
     .class-item {
@@ -48,7 +47,6 @@
         border-radius: 0.5rem;
         color: white;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         position: relative;
     }
