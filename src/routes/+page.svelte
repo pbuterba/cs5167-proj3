@@ -1,6 +1,6 @@
 <script>
-    import Calendar from "../lib/Calendar.svelte";
-    import ClassList from "../lib/ClassList.svelte";
+    import Calendar from "../lib/components/Calendar.svelte";
+    import ClassList from "../lib/components/ClassList.svelte";
     import {
         Popover,
         PopoverChipTrigger,

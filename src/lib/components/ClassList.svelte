@@ -1,5 +1,5 @@
 <script>
-    import { presetScheduleData } from "../presetScheduleData";
+    import { presetScheduleData } from "../../presetScheduleData.js";
     export let semester = "fall_2023"; // Receives the dynamic semester prop
 
     // Filter unique courses based on course name

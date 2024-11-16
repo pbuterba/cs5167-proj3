@@ -4,8 +4,8 @@
     import { presetStudentData } from '../presetStudentData';
     import { headersAndLinks } from '../presetTabData';
     import humanIcon from '$lib/img/human-icon.png';
-    import HeaderDropdown from '../lib/HeaderDropdown.svelte';
-    import ProgressTracker from '../lib/ProgressTracker.svelte';
+    import HeaderDropdown from '../lib/components/HeaderDropdown.svelte';
+    import ProgressTracker from "../lib/components/ProgressTracker.svelte";
 
     let flyoutElement;
 

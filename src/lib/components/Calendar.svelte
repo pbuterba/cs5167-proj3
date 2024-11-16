@@ -3,7 +3,7 @@
     import TimeGrid from '@event-calendar/time-grid';
     import CalendarEvent from './CalendarEvent.svelte';
     import { mount } from 'svelte';
-    import { presetScheduleData } from '../presetScheduleData';
+    import { presetScheduleData } from '../../presetScheduleData.js';
 
     export let semester = 'fall_2023';
 
