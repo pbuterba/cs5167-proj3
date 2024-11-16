@@ -15,7 +15,7 @@ export const presetStudentData = {
     curriculum: {
         academicYears: [
             {
-                name: "Fall 2021-Summer 2022",
+                name: "Fall 2021 - Summer 2022",
                 semesters: [
                     {
                         name: "Fall 2021",
@@ -179,7 +179,7 @@ export const presetStudentData = {
                 ]
             },
             {
-                name: "Fall 2022-Summer 2023",
+                name: "Fall 2022 - Summer 2023",
                 semesters: [
                     {
                         name: "Fall 2022",
@@ -295,7 +295,7 @@ export const presetStudentData = {
                 ]
             },
             {
-                name: "Fall 2023-Summer 2024",
+                name: "Fall 2023 - Summer 2024",
                 semesters: [
                     {
                         name: "Fall 2023",
@@ -375,7 +375,7 @@ export const presetStudentData = {
                 ]
             },
             {
-                name: "Fall 2024-Summer 2025",
+                name: "Fall 2024 - Summer 2025",
                 semesters: [
                     {
                         name: "Fall 2024",
@@ -456,7 +456,7 @@ export const presetStudentData = {
                 ]
             },
             {
-                name: "Fall 2025-Spring 2026",
+                name: "Fall 2025 - Spring 2026",
                 semesters: [
                     {
                         name: "Fall 2025",
