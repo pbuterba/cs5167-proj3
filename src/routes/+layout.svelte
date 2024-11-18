@@ -68,7 +68,7 @@
 </script>
 
 <main>
-    <Flyout bind:this={flyoutElement} header={presetStudentData.name} subheader="">
+    <Flyout hidebackground={true} bind:this={flyoutElement} header={presetStudentData.name} subheader="">
         <div slot="flyout-body" class="flyout-body">
             <Header type={HeaderTypeEnum.h3}>Academic Information:</Header>
 
