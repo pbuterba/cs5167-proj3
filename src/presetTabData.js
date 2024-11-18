@@ -1,14 +1,7 @@
 export const headersAndLinks = [
     {label: 'Classes & Schedule', links: [
-        {label: 'Create My Schedule', href:"#"},
-        {label: 'Search for Classes', href:"#"},
-        {label: 'Add, Drop, or Edit Classes', href:"#"},
-        {label: 'Enrollment Shopping Cart', href:"#"}
-    ]},
-    
-    {label: 'Calendar & Deadlines', links: [
-        {label: 'University Calendar', href:"#"},
-        {label: 'Final Exam Schedule', href:"#"}
+        {label: 'Plan My Schedule', href:"#"},
+        {label: 'Manage Class Schedule', href:"#"},
     ]},
 
     {label: 'Grades & Enrollment', links: [
@@ -17,19 +10,16 @@ export const headersAndLinks = [
         {label: 'View my Unofficial Record', href:"#"},
         {label: 'Print Enrollment / Degree Letter', href:"#"},
     ]},
-    {label: 'Graduation', links:[
-        {label: 'Apply to Graduate', href:"#"},
-        {label: 'View Graduation Status', href:"#"},
-        {label: 'Commencement Ceremony', href:"#"},
-        {label: 'Grad Application Deadlines', href:"#"},
-        {label: 'Electronic Diploma', href:"#"}
-    ]},
     {label: 'Academic Progress', links:[
+        {label: 'Curriculum Progress', href:"/curriculum-progress"},
         {label: 'Get My Degree Audit', href:"#"},
-        {label: 'My Graduation Plan', href:"#"},
-        {label: 'Run a "What-if" Report', href:"#"},
-        {label: 'Transfer Credit Evaluation', href:"#"},
-        {label: 'My Bearcat Network', href:"#"}
+        {label: 'Plan My Classes', href:"#"},
+        {label: 'Transfer Credit Evaluation', href:"#"}
+    ]},
+    {label: 'Student Tools', links:[
+        {label: 'Canvas', href:"https://uc.instructure.com"},
+        {label: 'My Bearcat Network', href:"https://uc.inspire.civitaslearning.com"},
+        {label: 'University Calendars', href:"https://www.uc.edu/about/registrar/calendars"}
     ]}
 ];
 
