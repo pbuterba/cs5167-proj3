@@ -64,6 +64,9 @@
             <h2 class="class-name">{classData.name}</h2>
         {/if}
         <span class="class-status">{classStatus}</span>
+        {#if (!placeholder || fulfilled) && statusData.completed}
+            <span class="class-status"> (Grade: {statusData.grade})</span>
+        {/if}
     </div>
 </main>
 <style>

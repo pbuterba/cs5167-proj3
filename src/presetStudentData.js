@@ -536,7 +536,7 @@ export const presetStudentData = {
                         completed: true,
                         inProgress: true,
                         registered: true,
-                        grade: null
+                        grade: "A"
                     },
                     {
                         number: "ENGL 2003",
@@ -545,7 +545,7 @@ export const presetStudentData = {
                         completed: true,
                         inProgress: true,
                         registered: true,
-                        grade: null
+                        grade: "A"
                     },
                     {
                         number: "AMEC 2050C",
