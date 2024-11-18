@@ -3,16 +3,24 @@
 
     export let label = '';
     export let links = [];
+
+    let popoverElement;
+
+    function handleClick() {
+        if (popoverElement) {
+            popoverElement.close();
+        }
+    }
 </script>
 
-<Popover>
+<Popover bind:this={popoverElement}>
     <PopoverTrigger slot="trigger" fullwidth={false} fullheight={false}>
         <div slot="custom-trigger" class="trigger">{label} &#9660;</div>
     </PopoverTrigger>
     <PopoverContent slot="content">
         <div class="header-dropdown-links" slot="custom-content">
             {#each links as link}
-                <a href={link.href} target={link.href.startsWith('https://') ? '_blank' : ''}>{link.label}</a>
+                <a href={link.href} target={link.href.startsWith('https://') ? '_blank' : ''} on:click={handleClick}>{link.label}</a>
             {/each}
         </div>
     </PopoverContent>
