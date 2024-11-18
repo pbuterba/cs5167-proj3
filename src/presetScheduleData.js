@@ -13,7 +13,8 @@ export const presetScheduleData = {
                     course: 'CS 220',
                     courseName: 'Data Structures',
                     location: 'Computer Science Lab 101',
-                    instructor: 'Dr. Lisa Monroe'
+                    instructor: 'Dr. Lisa Monroe',
+                    grade: 'B'
                 }
             },
             {
@@ -25,7 +26,8 @@ export const presetScheduleData = {
                     course: 'CS 220',
                     courseName: 'Data Structures',
                     location: 'Computer Science Lab 101',
-                    instructor: 'Dr. Lisa Monroe'
+                    instructor: 'Dr. Lisa Monroe',
+                    grade: 'B'
                 }
             },
             {
@@ -37,7 +39,8 @@ export const presetScheduleData = {
                     course: 'PSY 101',
                     courseName: 'Introduction to Psychology',
                     location: 'Psychology Hall 204',
-                    instructor: 'Prof. William Tate'
+                    instructor: 'Prof. William Tate',
+                    grade: 'C'
                 }
             },
             {
@@ -49,7 +52,8 @@ export const presetScheduleData = {
                     course: 'PSY 101',
                     courseName: 'Introduction to Psychology',
                     location: 'Psychology Hall 204',
-                    instructor: 'Prof. William Tate'
+                    instructor: 'Prof. William Tate',
+                    grade: 'C'
                 }
             },
             {
@@ -61,7 +65,8 @@ export const presetScheduleData = {
                     course: 'HIST 101',
                     courseName: 'Ancient Civilizations',
                     location: 'History Building 303',
-                    instructor: 'Dr. Alicia Chen'
+                    instructor: 'Dr. Alicia Chen',
+                    grade: 'A'
                 }
             },
             {
@@ -73,7 +78,8 @@ export const presetScheduleData = {
                     course: 'HIST 101',
                     courseName: 'Ancient Civilizations',
                     location: 'History Building 303',
-                    instructor: 'Dr. Alicia Chen'
+                    instructor: 'Dr. Alicia Chen',
+                    grade: 'A'
                 }
             },
             {
@@ -85,7 +91,8 @@ export const presetScheduleData = {
                     course: 'BIO 101',
                     courseName: 'Biology I',
                     location: 'Science Hall 201',
-                    instructor: 'Dr. Rachel Martin'
+                    instructor: 'Dr. Rachel Martin',
+                    grade: 'A-'
                 }
             },
             {
@@ -97,7 +104,8 @@ export const presetScheduleData = {
                     course: 'BIO 101',
                     courseName: 'Biology I',
                     location: 'Science Hall 201',
-                    instructor: 'Dr. Rachel Martin'
+                    instructor: 'Dr. Rachel Martin',
+                    grade: 'A-'
                 }
             },
             {
@@ -109,7 +117,8 @@ export const presetScheduleData = {
                     course: 'ENG 210',
                     courseName: 'Shakespearean Studies',
                     location: 'English Hall 102',
-                    instructor: 'Prof. Samuel Green'
+                    instructor: 'Prof. Samuel Green',
+                    grade: 'B+'
                 }
             },
             {
@@ -121,7 +130,8 @@ export const presetScheduleData = {
                     course: 'ENG 210',
                     courseName: 'Shakespearean Studies',
                     location: 'English Hall 102',
-                    instructor: 'Prof. Samuel Green'
+                    instructor: 'Prof. Samuel Green',
+                    grade: 'B+'
                 }
             },
             {
@@ -133,7 +143,8 @@ export const presetScheduleData = {
                     course: 'PHYS 2001',
                     courseName: 'Physics I',
                     location: 'Physics Lab 305',
-                    instructor: 'Dr. Josephine Clark'
+                    instructor: 'Dr. Josephine Clark',
+                    grade: 'B'
                 }
             },
             {
@@ -145,7 +156,8 @@ export const presetScheduleData = {
                     course: 'PHYS 2001',
                     courseName: 'Physics I',
                     location: 'Physics Lab 305',
-                    instructor: 'Dr. Josephine Clark'
+                    instructor: 'Dr. Josephine Clark',
+                    grade: 'B'
                 }
             }
         ]
@@ -158,10 +170,11 @@ export const presetScheduleData = {
                 end: getDateOfWeek(1, 9, 25),
                 backgroundColor: "#A1C45A",
                 extendedProps: {
-                    course: 'ENGR 1101',
+                    course: 'ENED 1100',
                     courseName: 'Introduction to Engineering',
-                    location: 'Engineering Hall 101',
-                    instructor: 'Dr. Sandra Holt'
+                    location: 'Baldwin 860D',
+                    instructor: 'Preston Buterbaugh',
+                    grade: 'A'
                 }
             },
             {
@@ -170,10 +183,11 @@ export const presetScheduleData = {
                 end: getDateOfWeek(3, 9, 25),
                 backgroundColor: "#A1C45A",
                 extendedProps: {
-                    course: 'ENGR 1101',
+                    course: 'ENED 1100',
                     courseName: 'Introduction to Engineering',
-                    location: 'Engineering Hall 101',
-                    instructor: 'Dr. Sandra Holt'
+                    location: 'Baldwin 860D',
+                    instructor: 'Preston Buterbaugh',
+                    grade: 'A'
                 }
             },
             {
@@ -185,7 +199,8 @@ export const presetScheduleData = {
                     course: 'BIO 102',
                     courseName: 'Biology II',
                     location: 'Life Sciences 150',
-                    instructor: 'Dr. Anna Rivera'
+                    instructor: 'Dr. Anna Rivera',
+                    grade: 'A-'
                 }
             },
             {
@@ -197,7 +212,8 @@ export const presetScheduleData = {
                     course: 'BIO 102',
                     courseName: 'Biology II',
                     location: 'Life Sciences 150',
-                    instructor: 'Dr. Anna Rivera'
+                    instructor: 'Dr. Anna Rivera',
+                    grade: 'A-'
                 }
             },
             {
@@ -209,7 +225,8 @@ export const presetScheduleData = {
                     course: 'HIST 2120',
                     courseName: 'World History',
                     location: 'History Building 302',
-                    instructor: 'Dr. Raymond King'
+                    instructor: 'Dr. Raymond King',
+                    grade: 'A'
                 }
             },
             {
@@ -221,7 +238,8 @@ export const presetScheduleData = {
                     course: 'HIST 2120',
                     courseName: 'World History',
                     location: 'History Building 302',
-                    instructor: 'Dr. Raymond King'
+                    instructor: 'Dr. Raymond King',
+                    grade: 'A'
                 }
             },
             {
@@ -233,7 +251,8 @@ export const presetScheduleData = {
                     course: 'MATH 1500',
                     courseName: 'Linear Algebra',
                     location: 'Math Building 202',
-                    instructor: 'Dr. Erin McDonald'
+                    instructor: 'Dr. Erin McDonald',
+                    grade: 'B-'
                 }
             },
             {
@@ -245,7 +264,8 @@ export const presetScheduleData = {
                     course: 'MATH 1500',
                     courseName: 'Linear Algebra',
                     location: 'Math Building 202',
-                    instructor: 'Dr. Erin McDonald'
+                    instructor: 'Dr. Erin McDonald',
+                    grade: 'B-'
                 }
             },
             {
@@ -257,7 +277,8 @@ export const presetScheduleData = {
                     course: 'ARTS 2100',
                     courseName: 'Art Appreciation',
                     location: 'Fine Arts 303',
-                    instructor: 'Prof. Lillian Barnes'
+                    instructor: 'Prof. Lillian Barnes',
+                    grade: 'A'
                 }
             },
             {
@@ -269,7 +290,8 @@ export const presetScheduleData = {
                     course: 'ARTS 2100',
                     courseName: 'Art Appreciation',
                     location: 'Fine Arts 303',
-                    instructor: 'Prof. Lillian Barnes'
+                    instructor: 'Prof. Lillian Barnes',
+                    grade: 'A'
                 }
             }
         ]
@@ -285,7 +307,8 @@ export const presetScheduleData = {
                     course: 'ENG 101',
                     courseName: 'English Literature',
                     location: 'Humanities Hall 202',
-                    instructor: 'Dr. Sarah Williams'
+                    instructor: 'Dr. Sarah Williams',
+                    grade: 'A'
                 }
             },
             {
@@ -297,7 +320,8 @@ export const presetScheduleData = {
                     course: 'ENG 101',
                     courseName: 'English Literature',
                     location: 'Humanities Hall 202',
-                    instructor: 'Dr. Sarah Williams'
+                    instructor: 'Dr. Sarah Williams',
+                    grade: 'A'
                 }
             },
             {
@@ -309,7 +333,8 @@ export const presetScheduleData = {
                     course: 'BIO 101',
                     courseName: 'Biology Basics',
                     location: 'Life Sciences 101',
-                    instructor: 'Dr. Jason Kim'
+                    instructor: 'Dr. Jason Kim',
+                    grade: 'B+'
                 }
             },
             {
@@ -321,7 +346,8 @@ export const presetScheduleData = {
                     course: 'BIO 101',
                     courseName: 'Biology Basics',
                     location: 'Life Sciences 101',
-                    instructor: 'Dr. Jason Kim'
+                    instructor: 'Dr. Jason Kim',
+                    grade: 'B+'
                 }
             },
             {
@@ -333,7 +359,8 @@ export const presetScheduleData = {
                     course: 'HIST 210',
                     courseName: 'World History',
                     location: 'History Building 305',
-                    instructor: 'Prof. Linda Chan'
+                    instructor: 'Prof. Linda Chan',
+                    grade: 'A'
                 }
             },
             {
@@ -345,7 +372,8 @@ export const presetScheduleData = {
                     course: 'HIST 210',
                     courseName: 'World History',
                     location: 'History Building 305',
-                    instructor: 'Prof. Linda Chan'
+                    instructor: 'Prof. Linda Chan',
+                    grade: 'A'
                 }
             },
             {
@@ -357,7 +385,8 @@ export const presetScheduleData = {
                     course: 'CHEM 120',
                     courseName: 'Chemistry I',
                     location: 'Science Center 210',
-                    instructor: 'Dr. Emily Martin'
+                    instructor: 'Dr. Emily Martin',
+                    grade: 'A'
                 }
             },
             {
@@ -369,7 +398,8 @@ export const presetScheduleData = {
                     course: 'CHEM 120',
                     courseName: 'Chemistry I',
                     location: 'Science Center 210',
-                    instructor: 'Dr. Emily Martin'
+                    instructor: 'Dr. Emily Martin',
+                    grade: 'A'
                 }
             },
             {
@@ -381,7 +411,8 @@ export const presetScheduleData = {
                     course: 'MATH 110',
                     courseName: 'Algebra I',
                     location: 'Math Building 102',
-                    instructor: 'Prof. Karen Young'
+                    instructor: 'Prof. Karen Young',
+                    grade: 'A'
                 }
             },
             {
@@ -393,7 +424,8 @@ export const presetScheduleData = {
                     course: 'MATH 110',
                     courseName: 'Algebra I',
                     location: 'Math Building 102',
-                    instructor: 'Prof. Karen Young'
+                    instructor: 'Prof. Karen Young',
+                    grade: 'A'
                 }
             },
             {
@@ -405,7 +437,8 @@ export const presetScheduleData = {
                     course: 'PHYS 2001',
                     courseName: 'Physics I',
                     location: 'Physics Hall 110',
-                    instructor: 'Dr. Nathan Harper'
+                    instructor: 'Dr. Nathan Harper',
+                    grade: 'C+'
                 }
             },
             {
@@ -417,7 +450,8 @@ export const presetScheduleData = {
                     course: 'PHYS 140',
                     courseName: 'Physics I',
                     location: 'Physics Hall 110',
-                    instructor: 'Dr. Nathan Harper'
+                    instructor: 'Dr. Nathan Harper',
+                    grade: 'C+'
                 }
             }
         ]

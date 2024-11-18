@@ -21,7 +21,10 @@
                 class="class-item"
                 style="background-color: {course.backgroundColor}"
             >
-                <p><strong>{course.extendedProps.courseName}</strong></p>
+                <div>
+                    <p><strong>{course.extendedProps.courseName}</strong></p>
+                    <p>Grade: {course.extendedProps.grade === undefined ? '--' : course.extendedProps.grade}</p>
+                </div>
                 <span class="info-icon" title="More info"
                     >ℹ️
                     <div class="info-content">
