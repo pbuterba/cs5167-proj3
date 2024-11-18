@@ -2,10 +2,21 @@
     import {Accordion, AccordionHeader, AccordionBody, Button} from 'kiwi-nl';
     import CurriculumClass from '$lib/components/CurriculumClass.svelte';
     import {presetStudentData} from '../../presetStudentData.js';
+
+    let placeholderFulfillmentIndices = [];
+    for(let i = 0; i < presetStudentData.curriculum.placeholders.length; i++) {
+        placeholderFulfillmentIndices.push(0);
+    }
+
+    function getNextPlaceholderIndex(placeholderCategory) {
+        let index = placeholderFulfillmentIndices[placeholderCategory - 1];
+        placeholderFulfillmentIndices[placeholderCategory - 1]++;
+        return index;
+    }
 </script>
 <main>
     <div class="page-navigation">
-        <Button color="red">&#8249; My Academics</Button>
+        <Button href="/" color="red">&#8249; My Academics</Button>
     </div>
     <div class="header-info">
         <h1>Academic Progress</h1>
@@ -25,6 +36,12 @@
                                     <h3>{semester.name}</h3>
                                     {#each semester.classes as classData}
                                         <CurriculumClass classData={classData}/>
+                                    {/each}
+                                    {#each semester.options as option}
+                                        <CurriculumClass classData={option} option />
+                                    {/each}
+                                    {#each semester.placeholders as placeholderId}
+                                        <CurriculumClass classData={presetStudentData.curriculum.placeholders[placeholderId - 1]} placeholderIndex={getNextPlaceholderIndex(placeholderId)} placeholder />
                                     {/each}
                                 </div>
                             {/each}

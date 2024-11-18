@@ -443,9 +443,8 @@ export const presetStudentData = {
                                 number: "COOP 4012",
                                 name: "Co-op for CEAS (Fifth Semester Experience)",
                                 credits: 0,
-                                completed: true,
+                                completed: false,
                                 inProgress: false,
-                                registered: false,
                                 registered: false,
                                 grade: "P"
                             }
@@ -462,48 +461,72 @@ export const presetStudentData = {
                         name: "Fall 2025",
                         classes: [
                             {
-                                number: "CS 5001",
-                                name: "Computer Science Senior Design I",
-                                credits: 3,
-                                completed: false,
-                                inProgress: false,
-                                registered: false,
-                                grade: null,
-                            },
-                            {
                                 number: "CS 5170",
                                 name: "Theory of Formal Languages and Automata",
                                 credits: 3,
                                 completed: false,
                                 inProgress: false,
                                 registered: false,
-                                grade: null,
+                                grade: null
                             },
                         ],
-                        options: [],
+                        options: [
+                            {
+                                name: "Senior Design I",
+                                credits: 3,
+                                fulfilledNumber: null,
+                                fulfilledName: null,
+                                completed: false,
+                                inProgress: false,
+                                registered: false,
+                                grade: null,
+                                fulfillmentOptions: [
+                                    {
+                                        name: "Computer Science Senior Design I",
+                                        number: "CS 5001"
+                                    },
+                                    {
+                                        name: "Electrical Engineering Senior Design I",
+                                        number: "EECE 5001"
+                                    }
+                                ]
+                            }
+                        ],
                         placeholders: [2, 2, 3]
                     },
                     {
                         name: "Spring 2026",
-                        classes: [
+                        classes: [],
+                        options: [
+                            
                             {
-                                number: "CS 5002",
-                                name: "Computer Science Senior Design II",
+                                name: "Senior Design II",
                                 credits: 3,
+                                fulfilledNumber: null,
+                                fulfilledName: null,
                                 completed: false,
                                 inProgress: false,
                                 registered: false,
-                                grade: null
+                                grade: null,
+                                fulfillmentOptions: [
+                                    {
+                                        name: "Computer Science Senior Design II",
+                                        number: "CS 5001"
+                                    },
+                                    {
+                                        name: "Electrical Engineering Senior Design II",
+                                        number: "EECE 5001"
+                                    }
+                                ]
                             }
                         ],
-                        options: [],
                         placeholders: [2, 2, 2, 3]
                     }
                 ]
             }
         ],
-        placeholders: {
-            1: {
+        placeholders: [
+            {
                 name: "Breadth of Knowledge Class",
                 fulfillments: [
                     {
@@ -513,8 +536,7 @@ export const presetStudentData = {
                         completed: true,
                         inProgress: true,
                         registered: true,
-                        grade: null,
-                        counted: false
+                        grade: null
                     },
                     {
                         number: "ENGL 2003",
@@ -523,8 +545,7 @@ export const presetStudentData = {
                         completed: true,
                         inProgress: true,
                         registered: true,
-                        grade: null,
-                        counted: false
+                        grade: null
                     },
                     {
                         number: "AMEC 2050C",
@@ -533,19 +554,18 @@ export const presetStudentData = {
                         completed: false,
                         inProgress: true,
                         registered: true,
-                        grade: null,
-                        counted: false
+                        grade: null
                     }
                 ]
             },
-            2: {
+            {
                 name: "Computer Science Elective",
                 fulfillments: []
             },
-            3: {
-                name: "General Electives",
+            {
+                name: "General Elective",
                 fulfillments: []
             }
-        }
+        ]
     },
 }
