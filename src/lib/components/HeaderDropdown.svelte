@@ -7,12 +7,12 @@
 
 <Popover>
     <PopoverTrigger slot="trigger" fullwidth={false} fullheight={false}>
-        <div slot="custom-trigger" class="trigger">{label}</div>
+        <div slot="custom-trigger" class="trigger">{label} &#9660;</div>
     </PopoverTrigger>
     <PopoverContent slot="content">
         <div class="header-dropdown-links" slot="custom-content">
             {#each links as link}
-                <a href={link.href}>{link.label}</a>
+                <a href={link.href} target={link.href.startsWith('https://') ? '_blank' : ''} on:click={() => {window.click}}>{link.label}</a>
             {/each}
         </div>
     </PopoverContent>
