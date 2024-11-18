@@ -5,7 +5,7 @@
     import { mount } from 'svelte';
     import { presetScheduleData } from '../../presetScheduleData.js';
 
-    export let semester = 'fall_2023';
+    export let semester = 'fall_2024';
 
     const events = presetScheduleData[semester].courses;
 

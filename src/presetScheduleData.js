@@ -1,128 +1,153 @@
 import { getDateOfWeek } from "./lib/date-utilities";
 
 export const presetScheduleData = {
+    
     fall_2023: {
         courses: [
             {
                 id: '1',
-                start: getDateOfWeek(1, 9, 0),
-                end: getDateOfWeek(1, 9, 55),
-                backgroundColor: "#FF5C4D",
+                start: getDateOfWeek(1, 8, 30),
+                end: getDateOfWeek(1, 9, 50),
+                backgroundColor: "#FF6B6B",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Calculus I',
-                    location: 'Arts and Sciences 101',
-                    instructor: 'Preston Buterbaugh'
+                    course: 'CS 220',
+                    courseName: 'Data Structures',
+                    location: 'Computer Science Lab 101',
+                    instructor: 'Dr. Lisa Monroe'
                 }
             },
             {
                 id: '2',
-                start: getDateOfWeek(1, 13, 25),
-                end: getDateOfWeek(1, 14, 20),
-                backgroundColor: "#DAD870",
+                start: getDateOfWeek(4, 8, 30),
+                end: getDateOfWeek(4, 9, 50),
+                backgroundColor: "#FF6B6B",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Physics I',
-                    location: 'Lindner Hall 104',
-                    instructor: 'Madi Coulson'
+                    course: 'CS 220',
+                    courseName: 'Data Structures',
+                    location: 'Computer Science Lab 101',
+                    instructor: 'Dr. Lisa Monroe'
                 }
             },
             {
                 id: '3',
-                start: getDateOfWeek(2, 11, 0),
-                end: getDateOfWeek(2, 12, 30),
-                backgroundColor: "#FFCD58",
+                start: getDateOfWeek(2, 10, 0),
+                end: getDateOfWeek(2, 11, 0),
+                backgroundColor: "#6A89CC",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Composition',
-                    location: 'French Hall 450',
-                    instructor: 'Nate Louder'
+                    course: 'PSY 101',
+                    courseName: 'Introduction to Psychology',
+                    location: 'Psychology Hall 204',
+                    instructor: 'Prof. William Tate'
                 }
             },
             {
                 id: '4',
-                start: getDateOfWeek(2, 16, 0),
-                end: getDateOfWeek(2, 17, 20),
-                backgroundColor: "#83d2f1",
+                start: getDateOfWeek(5, 10, 0),
+                end: getDateOfWeek(5, 11, 0),
+                backgroundColor: "#6A89CC",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Public Speaking',
-                    location: 'Baldwin 240',
-                    instructor: 'Chloe Beletti'
+                    course: 'PSY 101',
+                    courseName: 'Introduction to Psychology',
+                    location: 'Psychology Hall 204',
+                    instructor: 'Prof. William Tate'
                 }
             },
             {
                 id: '5',
-                start: getDateOfWeek(3, 9, 0),
-                end: getDateOfWeek(3, 9, 55),
-                backgroundColor: "#FF5C4D",
+                start: getDateOfWeek(1, 11, 30),
+                end: getDateOfWeek(1, 12, 45),
+                backgroundColor: "#F6B93B",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Calculus I',
-                    location: 'Arts and Sciences 101',
-                    instructor: 'Preston Buterbaugh'
+                    course: 'HIST 101',
+                    courseName: 'Ancient Civilizations',
+                    location: 'History Building 303',
+                    instructor: 'Dr. Alicia Chen'
                 }
             },
             {
                 id: '6',
-                start: getDateOfWeek(3, 13, 25),
-                end: getDateOfWeek(3, 14, 20),
-                backgroundColor: "#DAD870",
+                start: getDateOfWeek(3, 11, 30),
+                end: getDateOfWeek(3, 12, 45),
+                backgroundColor: "#F6B93B",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Physics I',
-                    location: 'Lindner Hall 104',
-                    instructor: 'Madi Coulson'
+                    course: 'HIST 101',
+                    courseName: 'Ancient Civilizations',
+                    location: 'History Building 303',
+                    instructor: 'Dr. Alicia Chen'
                 }
             },
             {
                 id: '7',
-                start: getDateOfWeek(4, 11, 0),
-                end: getDateOfWeek(4, 12, 30),
-                backgroundColor: "#FFCD58",
+                start: getDateOfWeek(2, 12, 15),
+                end: getDateOfWeek(2, 13, 30),
+                backgroundColor: "#38ADA9",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Composition',
-                    location: 'French Hall 450',
-                    instructor: 'Nate Louder'
+                    course: 'BIO 101',
+                    courseName: 'Biology I',
+                    location: 'Science Hall 201',
+                    instructor: 'Dr. Rachel Martin'
                 }
             },
             {
                 id: '8',
-                start: getDateOfWeek(4, 16, 0),
-                end: getDateOfWeek(4, 17, 20),
-                backgroundColor: "#83d2f1",
+                start: getDateOfWeek(5, 12, 15),
+                end: getDateOfWeek(5, 13, 30),
+                backgroundColor: "#38ADA9",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Public Speaking',
-                    location: 'Baldwin 240',
-                    instructor: 'Chloe Beletti'
+                    course: 'BIO 101',
+                    courseName: 'Biology I',
+                    location: 'Science Hall 201',
+                    instructor: 'Dr. Rachel Martin'
                 }
             },
             {
                 id: '9',
-                start: getDateOfWeek(5, 9, 0),
-                end: getDateOfWeek(5, 9, 55),
-                backgroundColor: "#FF5C4D",
+                start: getDateOfWeek(1, 14, 0),
+                end: getDateOfWeek(1, 15, 0),
+                backgroundColor: "#E66767",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Calculus I',
-                    location: 'Arts and Sciences 101',
-                    instructor: 'Preston Buterbaugh'
+                    course: 'ENG 210',
+                    courseName: 'Shakespearean Studies',
+                    location: 'English Hall 102',
+                    instructor: 'Prof. Samuel Green'
                 }
             },
             {
                 id: '10',
-                start: getDateOfWeek(5, 13, 25),
-                end: getDateOfWeek(5, 14, 20),
-                backgroundColor: "#DAD870",
+                start: getDateOfWeek(4, 14, 0),
+                end: getDateOfWeek(4, 15, 0),
+                backgroundColor: "#E66767",
                 extendedProps: {
-                    course: 'CS 2010',
-                    courseName: 'Physics I',
-                    location: 'Lindner Hall 104',
-                    instructor: 'Madi Coulson'
+                    course: 'ENG 210',
+                    courseName: 'Shakespearean Studies',
+                    location: 'English Hall 102',
+                    instructor: 'Prof. Samuel Green'
                 }
             },
+            {
+                id: '11',
+                start: getDateOfWeek(2, 15, 15),
+                end: getDateOfWeek(2, 16, 30),
+                backgroundColor: "#60A3BC",
+                extendedProps: {
+                    course: 'PHYS 2001',
+                    courseName: 'Physics I',
+                    location: 'Physics Lab 305',
+                    instructor: 'Dr. Josephine Clark'
+                }
+            },
+            {
+                id: '12',
+                start: getDateOfWeek(4, 15, 15),
+                end: getDateOfWeek(4, 16, 30),
+                backgroundColor: "#60A3BC",
+                extendedProps: {
+                    course: 'PHYS 2001',
+                    courseName: 'Physics I',
+                    location: 'Physics Lab 305',
+                    instructor: 'Dr. Josephine Clark'
+                }
+            }
         ]
     },
     spring_2024: {
@@ -157,8 +182,8 @@ export const presetScheduleData = {
                 end: getDateOfWeek(1, 14, 40),
                 backgroundColor: "#89CFF0",
                 extendedProps: {
-                    course: 'BIO 1200',
-                    courseName: 'Biology I',
+                    course: 'BIO 102',
+                    courseName: 'Biology II',
                     location: 'Life Sciences 150',
                     instructor: 'Dr. Anna Rivera'
                 }
@@ -169,8 +194,8 @@ export const presetScheduleData = {
                 end: getDateOfWeek(3, 14, 40),
                 backgroundColor: "#89CFF0",
                 extendedProps: {
-                    course: 'BIO 1200',
-                    courseName: 'Biology I',
+                    course: 'BIO 102',
+                    courseName: 'Biology II',
                     location: 'Life Sciences 150',
                     instructor: 'Dr. Anna Rivera'
                 }
@@ -377,7 +402,7 @@ export const presetScheduleData = {
                 end: getDateOfWeek(2, 16, 15),
                 backgroundColor: "#2980B9",
                 extendedProps: {
-                    course: 'PHYS 140',
+                    course: 'PHYS 2001',
                     courseName: 'Physics I',
                     location: 'Physics Hall 110',
                     instructor: 'Dr. Nathan Harper'
@@ -401,148 +426,124 @@ export const presetScheduleData = {
         courses: [
             {
                 id: '1',
-                start: getDateOfWeek(1, 8, 30),
-                end: getDateOfWeek(1, 9, 50),
-                backgroundColor: "#FF6B6B",
+                start: getDateOfWeek(1, 9, 0),
+                end: getDateOfWeek(1, 9, 55),
+                backgroundColor: "#FF5C4D",
                 extendedProps: {
-                    course: 'CS 220',
-                    courseName: 'Data Structures',
-                    location: 'Computer Science Lab 101',
-                    instructor: 'Dr. Lisa Monroe'
+                    course: 'MATH 1061',
+                    courseName: 'Calculus I',
+                    location: 'Arts and Sciences 101',
+                    instructor: 'Preston Buterbaugh'
                 }
             },
             {
                 id: '2',
-                start: getDateOfWeek(4, 8, 30),
-                end: getDateOfWeek(4, 9, 50),
-                backgroundColor: "#FF6B6B",
+                start: getDateOfWeek(1, 13, 25),
+                end: getDateOfWeek(1, 14, 20),
+                backgroundColor: "#DAD870",
                 extendedProps: {
-                    course: 'CS 220',
-                    courseName: 'Data Structures',
-                    location: 'Computer Science Lab 101',
-                    instructor: 'Dr. Lisa Monroe'
+                    course: 'PHYS 2002',
+                    courseName: 'Physics II',
+                    location: 'Lindner Hall 104',
+                    instructor: 'Madi Coulson'
                 }
             },
             {
                 id: '3',
-                start: getDateOfWeek(2, 10, 0),
-                end: getDateOfWeek(2, 11, 0),
-                backgroundColor: "#6A89CC",
+                start: getDateOfWeek(2, 11, 0),
+                end: getDateOfWeek(2, 12, 30),
+                backgroundColor: "#FFCD58",
                 extendedProps: {
-                    course: 'PSY 101',
-                    courseName: 'Introduction to Psychology',
-                    location: 'Psychology Hall 204',
-                    instructor: 'Prof. William Tate'
+                    course: 'ENGL 1001',
+                    courseName: 'Composition',
+                    location: 'French Hall 450',
+                    instructor: 'Nate Louder'
                 }
             },
             {
                 id: '4',
-                start: getDateOfWeek(5, 10, 0),
-                end: getDateOfWeek(5, 11, 0),
-                backgroundColor: "#6A89CC",
+                start: getDateOfWeek(2, 16, 0),
+                end: getDateOfWeek(2, 17, 20),
+                backgroundColor: "#83d2f1",
                 extendedProps: {
-                    course: 'PSY 101',
-                    courseName: 'Introduction to Psychology',
-                    location: 'Psychology Hall 204',
-                    instructor: 'Prof. William Tate'
+                    course: 'COMM 1071',
+                    courseName: 'Public Speaking',
+                    location: 'Baldwin 240',
+                    instructor: 'Chloe Beletti'
                 }
             },
             {
                 id: '5',
-                start: getDateOfWeek(1, 11, 30),
-                end: getDateOfWeek(1, 12, 45),
-                backgroundColor: "#F6B93B",
+                start: getDateOfWeek(3, 9, 0),
+                end: getDateOfWeek(3, 9, 55),
+                backgroundColor: "#FF5C4D",
                 extendedProps: {
-                    course: 'HIST 101',
-                    courseName: 'Ancient Civilizations',
-                    location: 'History Building 303',
-                    instructor: 'Dr. Alicia Chen'
+                    course: 'MATH 1061',
+                    courseName: 'Calculus I',
+                    location: 'Arts and Sciences 101',
+                    instructor: 'Preston Buterbaugh'
                 }
             },
             {
                 id: '6',
-                start: getDateOfWeek(3, 11, 30),
-                end: getDateOfWeek(3, 12, 45),
-                backgroundColor: "#F6B93B",
+                start: getDateOfWeek(3, 13, 25),
+                end: getDateOfWeek(3, 14, 20),
+                backgroundColor: "#DAD870",
                 extendedProps: {
-                    course: 'HIST 101',
-                    courseName: 'Ancient Civilizations',
-                    location: 'History Building 303',
-                    instructor: 'Dr. Alicia Chen'
+                    course: 'PHYS 2002',
+                    courseName: 'Physics II',
+                    location: 'Lindner Hall 104',
+                    instructor: 'Madi Coulson'
                 }
             },
             {
                 id: '7',
-                start: getDateOfWeek(2, 12, 15),
-                end: getDateOfWeek(2, 13, 30),
-                backgroundColor: "#38ADA9",
+                start: getDateOfWeek(4, 11, 0),
+                end: getDateOfWeek(4, 12, 30),
+                backgroundColor: "#FFCD58",
                 extendedProps: {
-                    course: 'BIO 102',
-                    courseName: 'Biology II',
-                    location: 'Science Hall 201',
-                    instructor: 'Dr. Rachel Martin'
+                    course: 'ENGL 1001',
+                    courseName: 'Composition',
+                    location: 'French Hall 450',
+                    instructor: 'Nate Louder'
                 }
             },
             {
                 id: '8',
-                start: getDateOfWeek(5, 12, 15),
-                end: getDateOfWeek(5, 13, 30),
-                backgroundColor: "#38ADA9",
+                start: getDateOfWeek(4, 16, 0),
+                end: getDateOfWeek(4, 17, 20),
+                backgroundColor: "#83d2f1",
                 extendedProps: {
-                    course: 'BIO 102',
-                    courseName: 'Biology II',
-                    location: 'Science Hall 201',
-                    instructor: 'Dr. Rachel Martin'
+                    course: 'COMM 1071',
+                    courseName: 'Public Speaking',
+                    location: 'Baldwin 240',
+                    instructor: 'Chloe Beletti'
                 }
             },
             {
                 id: '9',
-                start: getDateOfWeek(1, 14, 0),
-                end: getDateOfWeek(1, 15, 0),
-                backgroundColor: "#E66767",
+                start: getDateOfWeek(5, 9, 0),
+                end: getDateOfWeek(5, 9, 55),
+                backgroundColor: "#FF5C4D",
                 extendedProps: {
-                    course: 'ENG 210',
-                    courseName: 'Shakespearean Studies',
-                    location: 'English Hall 102',
-                    instructor: 'Prof. Samuel Green'
+                    course: 'MATH 1061',
+                    courseName: 'Calculus I',
+                    location: 'Arts and Sciences 101',
+                    instructor: 'Preston Buterbaugh'
                 }
             },
             {
                 id: '10',
-                start: getDateOfWeek(4, 14, 0),
-                end: getDateOfWeek(4, 15, 0),
-                backgroundColor: "#E66767",
+                start: getDateOfWeek(5, 13, 25),
+                end: getDateOfWeek(5, 14, 20),
+                backgroundColor: "#DAD870",
                 extendedProps: {
-                    course: 'ENG 210',
-                    courseName: 'Shakespearean Studies',
-                    location: 'English Hall 102',
-                    instructor: 'Prof. Samuel Green'
+                    course: 'PHYS 2002',
+                    courseName: 'Physics II',
+                    location: 'Lindner Hall 104',
+                    instructor: 'Madi Coulson'
                 }
             },
-            {
-                id: '11',
-                start: getDateOfWeek(2, 15, 15),
-                end: getDateOfWeek(2, 16, 30),
-                backgroundColor: "#60A3BC",
-                extendedProps: {
-                    course: 'PHYS 201',
-                    courseName: 'Physics II',
-                    location: 'Physics Lab 305',
-                    instructor: 'Dr. Josephine Clark'
-                }
-            },
-            {
-                id: '12',
-                start: getDateOfWeek(4, 15, 15),
-                end: getDateOfWeek(4, 16, 30),
-                backgroundColor: "#60A3BC",
-                extendedProps: {
-                    course: 'PHYS 201',
-                    courseName: 'Physics II',
-                    location: 'Physics Lab 305',
-                    instructor: 'Dr. Josephine Clark'
-                }
-            }
         ]
     }
 }
