@@ -12,7 +12,7 @@
     <PopoverContent slot="content">
         <div class="header-dropdown-links" slot="custom-content">
             {#each links as link}
-                <a href={link.href} target={link.href.startsWith('https://') ? '_blank' : ''} on:click={() => {window.click}}>{link.label}</a>
+                <a href={link.href} target={link.href.startsWith('https://') ? '_blank' : ''}>{link.label}</a>
             {/each}
         </div>
     </PopoverContent>
