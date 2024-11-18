@@ -1,12 +1,70 @@
 <script>
+    import {goto} from '$app/navigation';
     import { Header, Flyout, Button, HeaderTypeEnum, Text, ButtonTypeEnum } from 'kiwi-nl';
     import { presetStudentData } from '../presetStudentData';
     import { headersAndLinks } from '../presetTabData';
     import humanIcon from '$lib/img/human-icon.png';
-    import HeaderDropdown from '../lib/HeaderDropdown.svelte';
-    import ProgressTracker from '../lib/ProgressTracker.svelte';
+    import HeaderDropdown from '../lib/components/HeaderDropdown.svelte';
+    import ProgressTracker from "../lib/components/ProgressTracker.svelte";
 
     let flyoutElement;
+
+    const CREDITS_PER_PLACEHOLDER = 3;
+
+    function getCompletedCredits(curriculum) {
+        let credits = 0;
+        curriculum.academicYears.forEach((academicYear) => {
+            academicYear.semesters.forEach((semester) => {
+                semester.classes.forEach((academicClass) => {
+                    if(academicClass.completed) {
+                        credits += academicClass.credits;
+                    }
+                });
+            });
+        });
+        Object.entries(curriculum.placeholders).forEach(([_, placeholder]) => {
+            placeholder.fulfillments.forEach((academicClass) => {
+                if(academicClass.completed) {
+                    credits += academicClass.credits;
+                }
+            });
+        });
+        return credits;
+    }
+    function getInProgressCredits(curriculum) {
+        let credits = 0;
+        curriculum.academicYears.forEach((academicYear) => {
+            academicYear.semesters.forEach((semester) => {
+                semester.classes.forEach((academicClass) => {
+                    if(!academicClass.completed && academicClass.inProgress) {
+                        credits += academicClass.credits;
+                    }
+                });
+            });
+        });
+        Object.entries(curriculum.placeholders).forEach(([_, placeholder]) => {
+            placeholder.fulfillments.forEach((academicClass) => {
+                if(!academicClass.completed && academicClass.inProgress) {
+                    credits += academicClass.credits;
+                }
+            });
+        });
+        return credits;
+    }
+    function getTotalCredits(curriculum) {
+        let credits = 0;
+        curriculum.academicYears.forEach((academicYear) => {
+            academicYear.semesters.forEach((semester) => {
+                semester.classes.forEach((academicClass) => {
+                    credits += academicClass.credits;
+                });
+                semester.placeholders.forEach(() => {
+                    credits += CREDITS_PER_PLACEHOLDER;
+                });
+            });
+        });
+        return credits;
+    }
 </script>
 
 <main>
@@ -36,12 +94,12 @@
 
             <div class="group-elements">
                 <Header type={HeaderTypeEnum.subheader}>Current Semester Credit Hour Amount:</Header>
-                <Text>{presetStudentData.currentCreditHours}</Text>
+                <Text>{getInProgressCredits(presetStudentData.curriculum)}</Text>
             </div>
 
             <div class="group-elements">
                 <Header type={HeaderTypeEnum.subheader}>Total Credits Taken:</Header>
-                <Text>{presetStudentData.creditsTaken}</Text>
+                <Text>{getCompletedCredits(presetStudentData.curriculum)}</Text>
             </div>
 
             <br />
@@ -67,9 +125,15 @@
             </div>
 
             <br />
-            <Header type={HeaderTypeEnum.h3}>Progress Information:</Header>
-            <!-- ProgressTracker component displaying percent of classes complete -->
-            <ProgressTracker progress={0.85} />
+            <Header type={HeaderTypeEnum.h3}>Curriculum Progress:</Header>
+                <!-- ProgressTracker component displaying percent of classes complete -->
+                <ProgressTracker
+                    openProgressPage={() => {
+                        flyoutElement.toggle();
+                        goto('/curriculum-progress', false)}
+                    }
+                    progress={getCompletedCredits(presetStudentData.curriculum)/getTotalCredits(presetStudentData.curriculum)}
+                />
         </div>
     </Flyout>
 

@@ -1,6 +1,7 @@
 <script>
   import {Button} from 'kiwi-nl';
   export let progress = 0.74; // Example: 0.74 represents 74%
+  export let openProgressPage;
 
   // Calculate the angle based on progress
   const angle = 360 * progress;
@@ -18,7 +19,7 @@
 <div id="progress-circle" style={cssVarStyles}>
   <span class="progress-text">{Math.round(progress * 100)}%</span>
 </div>
-<Button>Academic Progress</Button>
+<Button on:click={() => {openProgressPage()}}>View Progress</Button>
 
 <style>
   #progress-circle {

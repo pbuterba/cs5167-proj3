@@ -1,6 +1,6 @@
 <script>
-    import Calendar from "../lib/Calendar.svelte";
-    import ClassList from "../lib/ClassList.svelte";
+    import Calendar from "../lib/components/Calendar.svelte";
+    import ClassList from "../lib/components/ClassList.svelte";
     import {
         Popover,
         PopoverChipTrigger,
@@ -15,7 +15,7 @@
         { label: "Fall 2024", value: "fall_2024" },
     ];
 
-    export let semester = "fall_2023";
+    export let semester = "fall_2024";
 
     function handlePopoverItemsChanged(event) {
         semester = event.detail.selectedItems[0]?.value;
@@ -30,7 +30,7 @@
             <Header type="h2">Semester:</Header>
             <Popover
                 on:popoverItemsChanged={handlePopoverItemsChanged}
-                selectedItems={[items[0]]}
+                selectedItems={[items[3]]}
                 {items}
             >
                 <PopoverChipTrigger slot="trigger" label="Semester" />
