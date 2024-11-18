@@ -127,7 +127,13 @@
             <br />
             <Header type={HeaderTypeEnum.h3}>Academic Progress:</Header>
                 <!-- ProgressTracker component displaying percent of classes complete -->
-                <ProgressTracker openProgressPage={() => {goto('/academic-progress', false)}} progress={getCompletedCredits(presetStudentData.curriculum)/getTotalCredits(presetStudentData.curriculum)} />
+                <ProgressTracker
+                    openProgressPage={() => {
+                        flyoutElement.toggle();
+                        goto('/academic-progress', false)}
+                    }
+                    progress={getCompletedCredits(presetStudentData.curriculum)/getTotalCredits(presetStudentData.curriculum)}
+                />
         </div>
     </Flyout>
 
