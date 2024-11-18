@@ -19,7 +19,7 @@
         <Button href="/" color="red">&#8249; My Academics</Button>
     </div>
     <div class="header-info">
-        <h1>Academic Progress</h1>
+        <h1>Curriculum Progress</h1>
         <p id="major">{presetStudentData.major}</p>
     </div>
     <div id="curriculum-area">
